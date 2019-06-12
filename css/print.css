@@ -67,7 +67,7 @@
     }
     .photo > h2 {
         font-size:15px;
-        margin-top: 25px;
+        margin-top: 10px;
     }
     .photo > h3 {
         margin-top: 10px;
@@ -119,6 +119,7 @@
     }
     .info  >.aboutme{
         margin-top: 100px;
+        padding-top: 30px;
     }
     .info> .contact{
         margin-top: 30px;
@@ -174,8 +175,9 @@
     }
     main {
     
-        padding-top: 10px;
-        padding-left: 20px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
     main h2 {
         display: flex;
@@ -222,11 +224,15 @@
         font-size: 14px;
         padding-top: 10px;
     }
-    main >.company,
-    main >.edu {
+    main >.company{
+        margin-top:150px;
         padding-top: 30px;
+    }
+    main >.edu {
+        margin-top: 30px;
     }
     main> .project > .penui  {
         margin-top: 150px;
+        padding-top: 30px;
     }
     
