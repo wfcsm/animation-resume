@@ -1,5 +1,4 @@
-
-    body{ background: rgb(244, 244, 244)}
+ body{ background: rgb(244, 244, 244)}
     *{
         margin: 0;
         padding: 0;
@@ -19,6 +18,9 @@
         fill: currentColor;
         overflow: hidden;
      }
+     .highlight{
+        color: #FF5700;
+    }
     .clearfix::after{
         content:'';
         display:block;
@@ -31,7 +33,7 @@
     }
     aside{
         float: left;
-        width: 36%;
+        width: 25%;
         background: rgb(55, 71, 79);
         margin-bottom:-10000px;
         padding-bottom:10000px;
@@ -39,19 +41,20 @@
     }
     main {
         float: left;
-        width: 64%;
+        width: 75%;
         background: white;
         margin-bottom:-10000px;
         padding-bottom:10000px;
     }
     aside > .photo{
-        padding: 10px;
+        /* padding: 5px; */
         background: rgb(39, 50 , 56);
     }
     aside > .photo >img {
+        /* margin-top: 20px; */
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         display: block;
         margin: 0 auto;
         border: 4px solid rgb(55,72,79);
@@ -63,18 +66,18 @@
     
     }
     .photo > h2 {
-        font-size:18px;
+        font-size:15px;
         margin-top: 25px;
     }
     .photo > h3 {
-        margin-top: 15px;
+        margin-top: 10px;
     }
     aside > .info {
         background: rgb(55, 71, 79);
-        padding-top: 50px;
-        padding-left: 45px;
-        padding-right: 45px;
-        padding-bottom: 90px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
     .info {
         color: white;
@@ -98,27 +101,34 @@
     
     
     .info h2 > .title {
-        margin-top: 9px;
-        margin-left: 20px;
+        margin-top: 3px;
+        margin-left: 10px;
     }
     .info p {
-        margin-top: 20px;
+        margin-top: 5px;
         text-align: justify;
         overflow: hidden;
         word-wrap: break-word;
         word-break: break-all;
         width: 100%;
     }
-    .info> .contact,
+ 
+   
     .info > .skills{
-        margin-top: 50px;
+        margin-top: 10px;
     }
-    .info > .skills{
-        margin-top: 150px;
+    .info  >.aboutme{
+        margin-top: 100px;
+    }
+    .info> .contact{
+        margin-top: 30px;
+    }
+    .info > .about{
+        margin-top: 30px;
     }
     .contact> ul > li,
     .skills > ul > li{
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
         line-height: 30px;
         font-size: 13px;
@@ -164,8 +174,8 @@
     }
     main {
     
-        padding-top: 45px;
-        padding-left: 40px;
+        padding-top: 10px;
+        padding-left: 20px;
     }
     main h2 {
         display: flex;
@@ -187,14 +197,27 @@
         flex-grow: 0;
     }
     main > .project > .project-item {
-        padding-left: 70px;
-        padding-top: 30px;
-        padding-right: 50px;
+        margin-top: 25px;
     }
-    main > .project > .project-item > h3 {
+    main > .project > .project-item  .project-item-wrapper {
+        display: flex;
+        flex-direction: row-reverse
+    }
+    main > .project > .project-item  .project-item-wrapper .imgwrapper,
+    main > .project > .project-item  .project-item-wrapper .article-wrapper{
+        padding-right: 10px;
+    }
+    main > .project > .project-item  img{
+        margin-top: 5px;
+        width: 300px;
+        border: 1px solid #ddd;
+        border-style: dashed;
+        border-radius: 5px;
+    }
+    main > .project > .project-item  h3 {
         padding-bottom: 10px;
     }
-    main > .project > .project-item > article {
+    main > .project > .project-item  article {
         line-height: 20px;
         font-size: 14px;
         padding-top: 10px;
@@ -202,5 +225,8 @@
     main >.company,
     main >.edu {
         padding-top: 30px;
+    }
+    main> .project > .penui  {
+        margin-top: 150px;
     }
     
